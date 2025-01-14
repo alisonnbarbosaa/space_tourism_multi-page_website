@@ -1,10 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router";
 import Header from "./components/layout/Header";
-import Footer from "./components/layout/Footer";
 import Home from "./components/pages/Home";
-import Destination from "./components/pages/Destination";
-import Crew from "./components/pages/Crew";
-import Technology from "./components/pages/Technology";
+import Destination from "./components/pages/destination/Destination_moon";
+import Crew from "./components/pages/crew/Crew_commander";
+import Technology from "./components/pages/technology/Technology_vehicle";
 
 function App() {
   return (
@@ -18,7 +17,6 @@ function App() {
           <Route path="/technology" element={<Technology />} />
         </Routes>
       </div>
-      <Footer />
     </BrowserRouter>
   );
 }
