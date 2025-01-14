@@ -3,13 +3,20 @@ import { useState, useEffect } from "react";
 
 import Header from "./components/layout/Header";
 import Home from "./components/pages/Home";
-import Crew from "./components/pages/crew/Crew_commander";
-import Technology from "./components/pages/technology/Technology_vehicle";
 
 import Destination_moon from "./components/pages/destination/Destination_moon";
 import Destination_mars from "./components/pages/destination/Destination_mars";
 import Destination_europa from "./components/pages/destination/Destination_europa";
 import Destination_titan from "./components/pages/destination/Destination_titan";
+
+import Crew_commander from "./components/pages/crew/Crew_commander";
+import Crew_engineer from "./components/pages/crew/Crew_engineer";
+import Crew_pilot from "./components/pages/crew/Crew_pilot";
+import Crew_specialist from "./components/pages/crew/Crew_specialist";
+
+import Technology_vehicle from "./components/pages/technology/Technology_vehicle";
+import Technology_spaceport from "./components/pages/technology/Technology_spaceport";
+import Technology_capsule from "./components/pages/technology/Technology_capsule";
 
 export default function App() {
   return (
@@ -49,13 +56,25 @@ function AppContent() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/destination_moon" element={<Destination_moon />} />
-          <Route path="/crew" element={<Crew />} />
-          <Route path="/technology" element={<Technology />} />
+          <Route path="/crew_commander" element={<Crew_commander />} />
+          <Route path="/technology_vehicle" element={<Technology_vehicle />} />
 
           {/* sistema de navegação das páginas do Destination */}
           <Route path="/destination_mars" element={<Destination_mars />} />
           <Route path="/destination_europa" element={<Destination_europa />} />
           <Route path="/destination_titan" element={<Destination_titan />} />
+
+          {/* sistema de navegação das páginas do Crew */}
+          <Route path="/crew_engineer" element={<Crew_engineer />} />
+          <Route path="/crew_pilot" element={<Crew_pilot />} />
+          <Route path="/crew_specialist" element={<Crew_specialist />} />
+
+          {/* sistema de navegação das páginas do Technology */}
+          <Route
+            path="/technology_spaceport"
+            element={<Technology_spaceport />}
+          />
+          <Route path="/technology_capsule" element={<Technology_capsule />} />
         </Routes>
       </div>
     </div>

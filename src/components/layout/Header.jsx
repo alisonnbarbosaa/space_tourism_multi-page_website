@@ -12,10 +12,10 @@ export default function Header() {
             <Link to="/destination_moon">01 Destination</Link>
           </li>
           <li>
-            <Link to="/crew">02 Crew</Link>
+            <Link to="/crew_commander">02 Crew</Link>
           </li>
           <li>
-            <Link to="/technology">03 Technology</Link>
+            <Link to="/technology_vehicle">03 Technology</Link>
           </li>
         </ul>
       </nav>
