@@ -37,7 +37,7 @@ function AppContent() {
     } else if (location.pathname.startsWith("/crew")) {
       setBg("bg-crew-desktop bg-cover bg-center"); // Cor para todas as páginas de crew
     } else if (location.pathname.startsWith("/technology")) {
-      setBg("bg-yellow-400"); // Cor para todas as páginas de technology
+      setBg("bg-technology-desktop bg-cover bg-center"); // Cor para todas as páginas de technology
     } else {
       switch (location.pathname) {
         case "/":

@@ -1,14 +1,13 @@
-
+import ContainerTechnology from "../../layout/ContainerTechnology";
+import img from "../../../assets/technology/image-launch-vehicle-portrait.jpg";
 
 export default function Technology_vehicle() {
   return (
-    <div>
-      00 Home 01 Destination 02 Crew 03 Technology 03 Space launch 101 1 2 3 The
-      terminology... Launch vehicle A launch vehicle or carrier rocket is a
-      rocket-propelled vehicle used to carry a payload from Earth's surface to
-      space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the
-      most powerful in operation. Standing 150 metres tall, it's quite an
-      awe-inspiring sight on the launch pad!
-    </div>
+    <ContainerTechnology
+      img={img}
+      h1="Launch vehicle"
+      h3="The terminology..."
+      description="A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!"
+    />
   );
 }
