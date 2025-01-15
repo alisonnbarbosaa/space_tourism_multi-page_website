@@ -1,17 +1,38 @@
-import { Link } from "react-router";
+import { NavLink } from "react-router";
 
 export default function NavBarTechnology() {
   return (
     <nav>
-      <ul className='flex flex-col gap-4'>
+      <ul className="flex flex-col gap-4">
         <li>
-          <Link to="/technology_vehicle"><button className="w-20 h-20 border-solid border-2 border-[#979797] rounded-full text-white text-2xl">1</button></Link>
+          <NavLink
+            to="/technology_vehicle"
+            className={({ isActive }) =>
+              isActive ? "active_technology" : "inactive_technology"
+            }
+          >
+            <button>1</button>
+          </NavLink>
         </li>
         <li>
-          <Link to="/technology_spaceport"><button className="w-20 h-20 border-solid border-2 border-[#979797] rounded-full text-white text-2xl">2</button></Link>
+          <NavLink
+            to="/technology_spaceport"
+            className={({ isActive }) =>
+              isActive ? "active_technology" : "inactive_technology"
+            }
+          >
+            <button>2</button>
+          </NavLink>
         </li>
         <li>
-          <Link to="/technology_capsule"><button className="w-20 h-20 border-solid border-2 border-[#979797] rounded-full text-white text-2xl">3</button></Link>
+          <NavLink
+            to="/technology_capsule"
+            className={({ isActive }) =>
+              isActive ? "active_technology" : "inactive_technology"
+            }
+          >
+            <button>3</button>
+          </NavLink>
         </li>
       </ul>
     </nav>

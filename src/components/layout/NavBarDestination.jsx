@@ -1,20 +1,48 @@
-import { Link } from "react-router";
+import { NavLink } from "react-router";
 
 export default function NavBarDestination() {
   return (
     <nav>
       <ul className="text-[#979797] flex items-center gap-12 uppercase">
         <li>
-          <Link to="/destination_moon">Moon</Link>
+          <NavLink
+            to="/destination_moon"
+            className={({ isActive }) =>
+              isActive ? "active_destination" : "text-[#979797]"
+            }
+          >
+            Moon
+          </NavLink>
         </li>
         <li>
-          <Link to="/destination_mars">Mars</Link>
+          <NavLink
+            to="/destination_mars"
+            className={({ isActive }) =>
+              isActive ? "active_destination" : "text-[#979797]"
+            }
+          >
+            Mars
+          </NavLink>
         </li>
         <li>
-          <Link to="/destination_europa">Europa</Link>
+          <NavLink
+            to="/destination_europa"
+            className={({ isActive }) =>
+              isActive ? "active_destination" : "text-[#979797]"
+            }
+          >
+            Europa
+          </NavLink>
         </li>
         <li>
-          <Link to="/destination_titan">Titan</Link>
+          <NavLink
+            to="/destination_titan"
+            className={({ isActive }) =>
+              isActive ? "active_destination" : "text-[#979797]"
+            }
+          >
+            Titan
+          </NavLink>
         </li>
       </ul>
     </nav>
