@@ -1,14 +1,13 @@
-import NavBarCrew from "./NavBarCrew";
+import ContainerCrew from "../../layout/ContainerCrew";
+import img from "../../../assets/crew/image-mark-shuttleworth.webp";
 
 export default function Crew_specialist() {
   return (
-    <div>
-      <NavBarCrew/>
-      00 Home 01 Destination 02 Crew 03 Technology 02 Meet your crew Mission
-      Specialist Mark Shuttleworth Mark Richard Shuttleworth is the founder and
-      CEO of Canonical, the company behind the Linux-based Ubuntu operating
-      system. Shuttleworth became the first South African to travel to space as
-      a space tourist.
-    </div>
+    <ContainerCrew
+      img={img}
+      h1="Mark Shuttleworth"
+      h2="Mission Specialist"
+      description="Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist."
+    />
   );
 }

@@ -1,9 +1,7 @@
-import NavBarTechonology from "./NavBarTechnology";
 
 export default function Technology_spaceport() {
   return (
     <div>
-      <NavBarTechonology />
       00 Home 01 Destination 02 Crew 03 Technology 03 Space launch 101 1 2 3 The
       terminology... Spaceport A spaceport or cosmodrome is a site for launching
       (or receiving) spacecraft, by analogy to the seaport for ships or airport

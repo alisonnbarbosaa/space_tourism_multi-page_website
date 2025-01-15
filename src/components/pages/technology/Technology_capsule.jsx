@@ -1,9 +1,8 @@
-import NavBarTechonology from "./NavBarTechnology";
+
 
 export default function Technology_capsule() {
   return (
     <div>
-      <NavBarTechonology />
       00 Home 01 Destination 02 Crew 03 Technology 03 Space launch 101 1 2 3 The
       terminology... Space capsule A space capsule is an often-crewed spacecraft
       that uses a blunt-body reentry capsule to reenter the Earth's atmosphere

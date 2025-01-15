@@ -1,9 +1,8 @@
-import NavBarTechonology from "./NavBarTechnology";
+
 
 export default function Technology_vehicle() {
   return (
     <div>
-      <NavBarTechonology />
       00 Home 01 Destination 02 Crew 03 Technology 03 Space launch 101 1 2 3 The
       terminology... Launch vehicle A launch vehicle or carrier rocket is a
       rocket-propelled vehicle used to carry a payload from Earth's surface to
