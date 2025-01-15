@@ -41,7 +41,7 @@ function AppContent() {
     } else {
       switch (location.pathname) {
         case "/":
-          setBg("bg-blue-500"); // Cor para a página inicial
+          setBg("bg-home-desktop bg-cover bg-center"); // Cor para a página inicial
           break;
         default:
           setBg("bg-white"); // Cor padrão para rotas não previstas
