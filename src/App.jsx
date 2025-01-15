@@ -33,7 +33,7 @@ function AppContent() {
   useEffect(() => {
     // verifica qual é a página atual e muda a imagem do fundo de forma dinâmica
     if (location.pathname.startsWith("/destination")) {
-      setBg("bg-red-500"); // Cor para todas as páginas de destination
+      setBg("bg-destination-desktop bg-cover bg-center"); // Cor para todas as páginas de destination
     } else if (location.pathname.startsWith("/crew")) {
       setBg("bg-green-600"); // Cor para todas as páginas de crew
     } else if (location.pathname.startsWith("/technology")) {
@@ -70,10 +70,7 @@ function AppContent() {
           <Route path="/crew_specialist" element={<Crew_specialist />} />
 
           {/* sistema de navegação das páginas do Technology */}
-          <Route
-            path="/technology_spaceport"
-            element={<Technology_spaceport />}
-          />
+          <Route path="/technology_spaceport" element={<Technology_spaceport />}/>
           <Route path="/technology_capsule" element={<Technology_capsule />} />
         </Routes>
       </div>

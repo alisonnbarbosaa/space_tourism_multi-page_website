@@ -3,7 +3,7 @@ import { Link } from "react-router";
 export default function NavBarDestination() {
   return (
     <nav>
-      <ul>
+      <ul className="text-[#979797] flex items-center gap-12 uppercase">
         <li>
           <Link to="/destination_moon">Moon</Link>
         </li>
