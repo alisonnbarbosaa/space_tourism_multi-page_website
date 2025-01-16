@@ -16,7 +16,7 @@ export default function ContainerDestination({
           <span className="text-[#979797] font-bold pr-2">01</span>
           Pick your destination
         </h2>
-        <img src={img} alt="" />
+        <img src={img} alt="" className="rotatePlanet"/>
       </div>
       <div className="w-1/2 flex flex-col justify-center gap-8">
         <NavBarDestination />

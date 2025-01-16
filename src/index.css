@@ -12,6 +12,7 @@ body,
 #root {
   height: 100%;
   font-family: Bellefair, sans-serif;
+  overflow: hidden;
 }
 
 .bg-home-desktop {
@@ -86,4 +87,16 @@ body,
   background-color: white;
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+.rotatePlanet{
+  animation: rotatePlanet 15s linear infinite;
+}
+@keyframes rotatePlanet {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
 }
