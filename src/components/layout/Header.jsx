@@ -1,13 +1,15 @@
 import { NavLink, Link } from "react-router";
 import logo from "../../assets/shared/logo.svg";
+import menu from "../../assets/shared/icon-hamburger.svg"
 
 export default function Header() {
   return (
-    <header className="h-1/6 flex justify-between items-center pl-16">
+    <header className="h-1/6 flex justify-between items-center min-[640px]:pl-12 max-sm:px-8 max-sm:pt-8">
       <Link to="/">
         <img src={logo} alt="logo" />
       </Link>
-      <nav className="backdrop-blur bg-[#ffffff1d] w-2/3 h-1/2 flex items-center">
+      <img src={menu} alt="" className="hidden max-sm:block"/>
+      <nav className="backdrop-blur bg-[#ffffff1d] w-2/3 h-1/2 flex items-center max-sm:hidden">
         <ul className="w-full flex items-center justify-evenly uppercase">
           <li>
             <NavLink

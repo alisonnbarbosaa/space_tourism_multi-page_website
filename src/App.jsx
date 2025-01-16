@@ -33,15 +33,15 @@ function AppContent() {
   useEffect(() => {
     // verifica qual é a página atual e muda a imagem do fundo de forma dinâmica
     if (location.pathname.startsWith("/destination")) {
-      setBg("bg-destination-desktop bg-cover bg-center"); // Cor para todas as páginas de destination
+      setBg("bg-destination bg-cover bg-center bg-fixed"); // Cor para todas as páginas de destination
     } else if (location.pathname.startsWith("/crew")) {
-      setBg("bg-crew-desktop bg-cover bg-center"); // Cor para todas as páginas de crew
+      setBg("bg-crew bg-cover bg-center"); // Cor para todas as páginas de crew
     } else if (location.pathname.startsWith("/technology")) {
-      setBg("bg-technology-desktop bg-cover bg-center"); // Cor para todas as páginas de technology
+      setBg("bg-technology bg-cover bg-center"); // Cor para todas as páginas de technology
     } else {
       switch (location.pathname) {
         case "/":
-          setBg("bg-home-desktop bg-cover bg-center"); // Cor para a página inicial
+          setBg("bg-home bg-cover bg-center"); // Cor para a página inicial
           break;
         default:
           setBg("bg-white"); // Cor padrão para rotas não previstas
@@ -50,7 +50,7 @@ function AppContent() {
   }, [location.pathname]);
 
   return (
-    <div className={`h-full ${bg}`}>
+    <div className={`h-full max-sm:h-min ${bg}`}>
       <Header />
       <div className="h-5/6">
         <Routes>
@@ -70,7 +70,10 @@ function AppContent() {
           <Route path="/crew_specialist" element={<Crew_specialist />} />
 
           {/* sistema de navegação das páginas do Technology */}
-          <Route path="/technology_spaceport" element={<Technology_spaceport />}/>
+          <Route
+            path="/technology_spaceport"
+            element={<Technology_spaceport />}
+          />
           <Route path="/technology_capsule" element={<Technology_capsule />} />
         </Routes>
       </div>
