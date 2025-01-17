@@ -19,7 +19,7 @@ export default function ContainerCrew({ img, h1, h2, description }) {
           <NavBarCrew />
         </div>
       </div>
-      <div className="w-1/2 flex justify-center">
+      <div className="w-1/2 flex justify-center max-sm:border-b-2 border-[#979797]">
         <img src={img} alt="" className="h-full" />
       </div>
       <h3 className="uppercase text-2xl text-white pb-4 min-[640px]:hidden">
