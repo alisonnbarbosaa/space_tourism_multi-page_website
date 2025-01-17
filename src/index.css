@@ -10,7 +10,7 @@
 html,
 body,
 #root {
-  height: 100vh;
+  height: 100%;
   font-family: Bellefair, sans-serif;
 }
 
@@ -39,11 +39,43 @@ body,
 .bg-destination {
   background-image: url("assets/destination/background-destination-desktop.jpg");
 }
+@media (max-width: 1024px) {
+  .bg-destination {
+    background-image: url("assets/destination/background-destination-tablet.jpg");
+  }
+}
+@media (max-width: 640px) {
+  .bg-destination {
+    background-image: url("assets/destination/background-destination-mobile.jpg");
+  }
+}
+
 .bg-crew {
   background-image: url("assets/crew/background-crew-desktop.jpg");
 }
+@media (max-width: 1024px) {
+  .bg-crew {
+    background-image: url("assets/crew/background-crew-tablet.jpg");
+  }
+}
+@media (max-width: 640px) {
+  .bg-crew {
+    background-image: url("assets/crew/background-crew-mobile.jpg");
+  }
+}
+
 .bg-technology {
   background-image: url("assets/technology/background-technology-desktop.jpg");
+}
+@media (max-width: 1024px) {
+  .bg-technology {
+    background-image: url("assets/technology/background-technology-tablet.jpg");
+  }
+}
+@media (max-width: 640px) {
+  .bg-technology {
+    background-image: url("assets/technology/background-technology-mobile.jpg");
+  }
 }
 
 .active {

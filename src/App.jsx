@@ -29,19 +29,23 @@ export default function App() {
 function AppContent() {
   const [bg, setBg] = useState("");
   const location = useLocation();
+  const [h, setH] = useState("");
 
   useEffect(() => {
     // verifica qual é a página atual e muda a imagem do fundo de forma dinâmica
     if (location.pathname.startsWith("/destination")) {
-      setBg("bg-destination bg-cover bg-center bg-fixed"); // Cor para todas as páginas de destination
+      setBg("bg-destination bg-cover bg-center"); // Cor para todas as páginas de destination
+      setH("max-sm:h-min h-full");
     } else if (location.pathname.startsWith("/crew")) {
       setBg("bg-crew bg-cover bg-center"); // Cor para todas as páginas de crew
+      setH("h-full");
     } else if (location.pathname.startsWith("/technology")) {
       setBg("bg-technology bg-cover bg-center"); // Cor para todas as páginas de technology
     } else {
       switch (location.pathname) {
         case "/":
           setBg("bg-home bg-cover bg-center"); // Cor para a página inicial
+          setH("h-full");
           break;
         default:
           setBg("bg-white"); // Cor padrão para rotas não previstas
@@ -50,7 +54,7 @@ function AppContent() {
   }, [location.pathname]);
 
   return (
-    <div className={`h-full max-sm:h-min ${bg}`}>
+    <div className={`${h} ${bg}`}>
       <Header />
       <div className="h-5/6">
         <Routes>

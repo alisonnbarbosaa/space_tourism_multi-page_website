@@ -2,7 +2,7 @@ import { Link } from "react-router";
 
 export default function Home() {
   return (
-    <section className="flex justify-around h-full w-full max-sm:flex-col max-sm:items-center max-sm:h-screen">
+    <section className="flex justify-around h-full w-full max-sm:flex-col max-sm:items-center">
       <div className="w-1/3 max-sm:h-1/2 flex flex-col justify-center items-start gap-8 max-sm:w-3/4 max-sm:items-center">
         <h2 className="text-[#979797] uppercase text-xl">
           So, you want to travel to
