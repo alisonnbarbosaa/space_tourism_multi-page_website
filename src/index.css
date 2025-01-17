@@ -139,6 +139,28 @@ body,
   font-weight: bold;
 }
 
+@media (max-width: 640px) {
+  .inactive_technology button {
+    width: 60px;
+    height: 60px;
+    border-width: 2px;
+    border-color: #979797;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .active_technology button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: black;
+    background-color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+}
+
 .rotatePlanet {
   animation: rotatePlanet 15s linear infinite;
 }

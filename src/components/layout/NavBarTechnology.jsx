@@ -3,7 +3,7 @@ import { NavLink } from "react-router";
 export default function NavBarTechnology() {
   return (
     <nav>
-      <ul className="flex flex-col gap-4">
+      <ul className="flex flex-col gap-4 max-sm:flex-row">
         <li>
           <NavLink
             to="/technology_vehicle"

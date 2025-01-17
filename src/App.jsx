@@ -41,6 +41,7 @@ function AppContent() {
       setH("h-full");
     } else if (location.pathname.startsWith("/technology")) {
       setBg("bg-technology bg-cover bg-center"); // Cor para todas as páginas de technology
+      setH("h-full");
     } else {
       switch (location.pathname) {
         case "/":
