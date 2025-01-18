@@ -179,9 +179,11 @@ body,
   }
 }
 
-.activeNavBar{
-  transform: translateX(100%);
-}
-.inActiveNavBar{
-  transform: translateX(0);
+@media (max-width: 640px) {
+  .activeNavBar {
+    transform: translateX(100%);
+  }
+  .inActiveNavBar {
+    transform: translateX(0);
+  }
 }
