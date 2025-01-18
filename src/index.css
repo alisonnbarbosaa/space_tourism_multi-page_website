@@ -139,7 +139,7 @@ body,
   font-weight: bold;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1024px) {
   .inactive_technology button {
     width: 60px;
     height: 60px;
