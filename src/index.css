@@ -79,17 +79,23 @@ body,
 }
 
 .active {
-  position: relative;
-  color: #979797;
+  color: white;
 }
-.active::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -25px;
-  width: 100%;
-  height: 3px;
-  background-color: white;
+
+@media (min-width: 640px) {
+  .active {
+    position: relative;
+    color: #979797;
+  }
+  .active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -25px;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+  }
 }
 
 .active_destination {
@@ -171,4 +177,11 @@ body,
   to {
     transform: rotate(360deg);
   }
+}
+
+.activeNavBar{
+  transform: translateX(100%);
+}
+.inActiveNavBar{
+  transform: translateX(0);
 }

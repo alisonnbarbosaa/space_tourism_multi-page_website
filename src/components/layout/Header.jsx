@@ -1,24 +1,52 @@
+import { useState } from "react";
 import { NavLink, Link } from "react-router";
 import logo from "../../assets/shared/logo.svg";
-import menu from "../../assets/shared/icon-hamburger.svg";
+import menu_hamburger from "../../assets/shared/icon-hamburger.svg";
+import menu_close from "../../assets/shared/icon-close.svg";
 
 export default function Header() {
+  const [status, setStatus] = useState(false);
+  const [navbar, setNavbar] = useState("activeNavBar");
+  const [menuImg, setMenuImg] = useState(menu_hamburger)
+
+  function statusNavBar() {
+    setStatus(!status);
+
+    if (status) {
+      setNavbar("activeNavBar");
+      setMenuImg(menu_hamburger)
+    } else {
+      setNavbar("inActiveNavBar");
+      setMenuImg(menu_close)
+    }
+
+    console.log(status);
+    console.log(navbar);
+  }
+
   return (
     <header className="h-1/6 flex justify-between items-center sm:pl-12 max-sm:px-8 max-sm:h-24">
       <Link to="/">
         <img src={logo} alt="logo" />
       </Link>
-      <img src={menu} alt="" className="hidden max-sm:block" />
-      <nav className="backdrop-blur bg-[#ffffff1d] w-2/3 h-1/2 flex items-center max-sm:hidden">
-        <ul className="w-full flex items-center justify-evenly uppercase sm:max-lg:text-sm">
+      <button className="hidden max-sm:block z-20" onClick={statusNavBar}>
+        <img src={menuImg} alt="" />
+      </button>
+      <nav
+        className={`backdrop-blur bg-[#ffffff1d] w-2/3 h-1/2 flex items-center max-sm:fixed top-0 right-0 max-sm:h-full max-sm:z-10 ${navbar}`}
+      >
+        <ul className="w-full flex sm:items-center justify-evenly uppercase sm:max-lg:text-sm max-sm:flex-col max-sm:h-full max-sm:justify-start max-sm:gap-12 max-sm:text-xl max-sm:pl-12 max-sm:pt-40">
           <li>
             <NavLink
               to="/"
               className={({ isActive }) =>
-                isActive ? "active" : "text-[#979797]"
+                isActive ? "active" : "text-[#979797] max-sm:text-white"
               }
             >
-              <span className="text-white font-semibold mr-2 sm:max-lg:hidden">00</span> Home
+              <span className="text-white font-semibold mr-2 sm:max-lg:hidden">
+                00
+              </span>
+              Home
             </NavLink>
           </li>
           <li>
@@ -27,10 +55,12 @@ export default function Header() {
               className={({ isActive }) =>
                 isActive || window.location.pathname.startsWith("/destination")
                   ? "active"
-                  : "text-[#979797]"
+                  : "text-[#979797] max-sm:text-white"
               }
             >
-              <span className="text-white font-semibold mr-2 sm:max-lg:hidden">01</span>
+              <span className="text-white font-semibold mr-2 sm:max-lg:hidden">
+                01
+              </span>
               Destination
             </NavLink>
           </li>
@@ -40,10 +70,13 @@ export default function Header() {
               className={({ isActive }) =>
                 isActive || window.location.pathname.startsWith("/crew")
                   ? "active"
-                  : "text-[#979797]"
+                  : "text-[#979797] max-sm:text-white"
               }
             >
-              <span className="text-white font-semibold mr-2 sm:max-lg:hidden">02</span> Crew
+              <span className="text-white font-semibold mr-2 sm:max-lg:hidden">
+                02
+              </span>
+              Crew
             </NavLink>
           </li>
           <li>
@@ -52,10 +85,12 @@ export default function Header() {
               className={({ isActive }) =>
                 isActive || window.location.pathname.startsWith("/technology")
                   ? "active"
-                  : "text-[#979797]"
+                  : "text-[#979797] max-sm:text-white"
               }
             >
-              <span className="text-white font-semibold mr-2 sm:max-lg:hidden">03</span>{" "}
+              <span className="text-white font-semibold mr-2 sm:max-lg:hidden">
+                03
+              </span>
               Technology
             </NavLink>
           </li>
