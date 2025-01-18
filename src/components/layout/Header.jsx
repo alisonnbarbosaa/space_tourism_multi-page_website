@@ -10,7 +10,7 @@ export default function Header() {
       </Link>
       <img src={menu} alt="" className="hidden max-sm:block" />
       <nav className="backdrop-blur bg-[#ffffff1d] w-2/3 h-1/2 flex items-center max-sm:hidden">
-        <ul className="w-full flex items-center justify-evenly uppercase">
+        <ul className="w-full flex items-center justify-evenly uppercase sm:max-lg:text-sm">
           <li>
             <NavLink
               to="/"
@@ -18,7 +18,7 @@ export default function Header() {
                 isActive ? "active" : "text-[#979797]"
               }
             >
-              <span className="text-white font-semibold mr-2">00</span> Home
+              <span className="text-white font-semibold mr-2 sm:max-lg:hidden">00</span> Home
             </NavLink>
           </li>
           <li>
@@ -30,7 +30,7 @@ export default function Header() {
                   : "text-[#979797]"
               }
             >
-              <span className="text-white font-semibold mr-2">01</span>
+              <span className="text-white font-semibold mr-2 sm:max-lg:hidden">01</span>
               Destination
             </NavLink>
           </li>
@@ -43,7 +43,7 @@ export default function Header() {
                   : "text-[#979797]"
               }
             >
-              <span className="text-white font-semibold mr-2">02</span> Crew
+              <span className="text-white font-semibold mr-2 sm:max-lg:hidden">02</span> Crew
             </NavLink>
           </li>
           <li>
@@ -55,7 +55,7 @@ export default function Header() {
                   : "text-[#979797]"
               }
             >
-              <span className="text-white font-semibold mr-2">03</span>{" "}
+              <span className="text-white font-semibold mr-2 sm:max-lg:hidden">03</span>{" "}
               Technology
             </NavLink>
           </li>
