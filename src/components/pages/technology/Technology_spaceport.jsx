@@ -1,6 +1,6 @@
 import ContainerTechnology from "../../layout/ContainerTechnology";
 import img from "../../../assets/technology/image-spaceport-portrait.jpg";
-import imgMobile from '../../../assets/technology/image-spaceport-landscape.jpg';
+import imgMobile from "../../../assets/technology/image-spaceport-landscape.jpg";
 
 export default function Technology_spaceport() {
   return (

@@ -7,21 +7,19 @@ import menu_close from "../../assets/shared/icon-close.svg";
 export default function Header() {
   const [status, setStatus] = useState(false);
   const [navbar, setNavbar] = useState("activeNavBar");
-  const [menuImg, setMenuImg] = useState(menu_hamburger)
+  const [menuImg, setMenuImg] = useState(menu_hamburger); //muda img do menu
 
+  //sistema de visualização da navbar responsiva
   function statusNavBar() {
     setStatus(!status);
 
     if (status) {
       setNavbar("activeNavBar");
-      setMenuImg(menu_hamburger)
+      setMenuImg(menu_hamburger);
     } else {
       setNavbar("inActiveNavBar");
-      setMenuImg(menu_close)
+      setMenuImg(menu_close);
     }
-
-    console.log(status);
-    console.log(navbar);
   }
 
   return (

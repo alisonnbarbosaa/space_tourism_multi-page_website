@@ -1,6 +1,6 @@
 import ContainerTechnology from "../../layout/ContainerTechnology";
 import img from "../../../assets/technology/image-space-capsule-portrait.jpg";
-import imgMobile from '../../../assets/technology/image-space-capsule-landscape.jpg';
+import imgMobile from "../../../assets/technology/image-space-capsule-landscape.jpg";
 
 export default function Technology_capsule() {
   return (

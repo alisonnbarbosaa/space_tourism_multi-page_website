@@ -16,7 +16,9 @@ export default function ContainerCrew({ img, h1, h2, description }) {
             <h1 className="text-6xl text-white uppercase max-sm:text-4xl sm:max-lg:text-4xl">
               {h1}
             </h1>
-            <p className="text-[#979797] text-lg w-3/4 sm:max-lg:w-full">{description}</p>
+            <p className="text-[#979797] text-lg w-3/4 sm:max-lg:w-full">
+              {description}
+            </p>
           </div>
           <NavBarCrew />
         </div>
