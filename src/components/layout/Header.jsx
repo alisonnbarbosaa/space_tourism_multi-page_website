@@ -33,7 +33,7 @@ export default function Header() {
         <img src={menuImg} alt="" />
       </button>
       <nav
-        className={`backdrop-blur bg-[#ffffff1d] w-2/3 h-1/2 flex items-center max-sm:fixed top-0 right-0 max-sm:h-full max-sm:z-10 ${navbar}`}
+        className={`backdrop-blur bg-[#0b0e1880] sm:bg-[#ffffff1d] w-2/3 h-1/2 flex items-center max-sm:fixed top-0 right-0 max-sm:h-full max-sm:z-10 ${navbar} max-sm:duration-300`}
       >
         <ul className="w-full flex sm:items-center justify-evenly uppercase sm:max-lg:text-sm max-sm:flex-col max-sm:h-full max-sm:justify-start max-sm:gap-12 max-sm:text-xl max-sm:pl-12 max-sm:pt-40">
           <li>

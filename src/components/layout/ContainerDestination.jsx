@@ -10,7 +10,7 @@ export default function ContainerDestination({
   spanP2,
 }) {
   return (
-    <section className="flex justify-around h-full w-full max-lg:flex-col max-lg:items-center max-lg:gap-8 sm:max-lg:gap-4 max-sm:pb-4 max-sm:h-min">
+    <section className="flex justify-around sm:max-lg:justify-start h-full w-full max-lg:flex-col max-lg:items-center max-lg:gap-8 sm:max-lg:gap-4 max-sm:pb-4 max-sm:h-min">
       <div className="w-1/2 max-lg:w-full flex flex-col justify-around items-center max-sm:gap-8 sm:max-lg:gap-4">
         <h2 className="uppercase text-xl text-white sm:max-lg:text-left sm:max-lg:w-5/6">
           <span className="text-[#979797] font-bold pr-2">01</span>
