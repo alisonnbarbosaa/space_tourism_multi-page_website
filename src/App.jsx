@@ -29,7 +29,7 @@ export default function App() {
 function AppContent() {
   const [bg, setBg] = useState("");
   const location = useLocation();
-  const [h, setH] = useState("");
+  const [h, setH] = useState(""); //altera altura da página
 
   useEffect(() => {
     // verifica qual é a página atual e muda a imagem do fundo de forma dinâmica

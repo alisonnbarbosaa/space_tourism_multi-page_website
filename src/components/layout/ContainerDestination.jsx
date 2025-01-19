@@ -16,12 +16,18 @@ export default function ContainerDestination({
           <span className="text-[#979797] font-bold pr-2">01</span>
           Pick your destination
         </h2>
-        <img src={img} alt="" className="rotatePlanet max-lg:w-60 sm:max-lg:w-64"/>
+        <img
+          src={img}
+          alt=""
+          className="rotatePlanet max-lg:w-60 sm:max-lg:w-64"
+        />
       </div>
       <div className="w-1/2 max-lg:w-full flex flex-col justify-center gap-8 sm:max-lg:gap-4 max-lg:items-center">
         <NavBarDestination />
         <h1 className="text-9xl text-white uppercase max-lg:text-6xl">{h1}</h1>
-        <p className="text-[#979797] text-lg w-3/4 max-lg:text-center">{description}</p>
+        <p className="text-[#979797] text-lg w-3/4 max-lg:text-center">
+          {description}
+        </p>
         <div className="flex justify-between items-center w-1/2 text-[#979797] text-lg uppercase pt-8 sm:max-lg:pt-4 border-solid border-t-2 border-[#979797] max-sm:flex-col max-sm:gap-8 max-sm:text-base">
           <p className="flex flex-col gap-2 max-sm:text-center">
             {p1}

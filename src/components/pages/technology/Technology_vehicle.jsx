@@ -1,6 +1,6 @@
 import ContainerTechnology from "../../layout/ContainerTechnology";
 import img from "../../../assets/technology/image-launch-vehicle-portrait.jpg";
-import imgMobile from '../../../assets/technology/image-launch-vehicle-landscape.jpg';
+import imgMobile from "../../../assets/technology/image-launch-vehicle-landscape.jpg";
 
 export default function Technology_vehicle() {
   return (
