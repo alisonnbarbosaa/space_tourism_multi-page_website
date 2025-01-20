@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, useLocation } from "react-router";
+import { HashRouter, Routes, Route, useLocation } from "react-router";
 import { useState, useEffect } from "react";
 
 import Header from "./components/layout/Header";
@@ -20,9 +20,9 @@ import Technology_capsule from "./components/pages/technology/Technology_capsule
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <AppContent />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
